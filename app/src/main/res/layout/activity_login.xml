@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/image"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="@color/purple_500"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+
+        />
+    <EditText
+        android:id="@+id/edUserName2"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:hint="Tài khoản"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/forget"/>
+    <EditText
+        android:id="@+id/edPassWord2"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:hint="Mật khẩu"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/forget"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="35dp"/>
+
+
+    <Button
+        android:id="@+id/btn_DangNhap"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_btn"
+        android:text="Đăng Nhập"
+        android:textSize="18sp"
+        android:backgroundTint="#3366FF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa có tài khoản? Đăng ký ngay"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

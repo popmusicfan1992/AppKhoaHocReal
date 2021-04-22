@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/tong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" >
+        <TextView
+            android:id="@+id/textUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            />
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:id="@+id/img_user"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:src="@drawable/phuhuynh"-->
+<!--            />-->
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            android:layout_toLeftOf="@+id/img_user"-->
+
+<!--            android:src="@drawable/search"-->
+<!--            />-->
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/tong"
+        android:id="@+id/cardview"
+        android:elevation="12dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="false"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="24dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chào mừng bạn đến với khóa học khủng"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+<!--                <TextView-->
+<!--                    android:id="@+id/textUsername"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:layout_marginTop="24dp"-->
+<!--                    />-->
+            </LinearLayout>
+<!--            <ImageView-->
+<!--                android:layout_width="102dp"-->
+<!--                android:layout_height="102dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginRight="24dp"-->
+<!--                android:src=""/>-->
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@id/cardview">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="Khóa học"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="21sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="Xem tất cả"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="14sp"/>x
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_course"
+        android:layout_width="match_parent"
+        android:layout_below="@id/course"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/nagivation__bottom"
+        android:background="@drawable/bg_bottom_navigation_view"
+        android:elevation="8dp"
+        app:menu="@menu/menu_bottom_navigation_view"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>
